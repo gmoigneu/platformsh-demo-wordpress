@@ -1,0 +1,171 @@
+/* LAYOUT STYLES */
+
+.page-container {
+	position: relative;
+	overflow: hidden;
+	overflow: hidden;
+	margin: 0 auto;
+	min-height: 100%;
+	max-width: 1980px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.page-wrapper {
+	position: relative;
+	float: right;
+	max-width: 1470px;
+	width: 74.243%;
+}
+
+.page-content {
+	position: relative;
+	left: 0;
+	border: 3px solid #fff;
+
+	@include transition(left 0.4s ease-out);
+
+	&.sidebar-open {
+		left: 425px;
+	}
+}
+
+.page-sidebar, body.layout-sidebar-left .page-sidebar{
+	position: relative;
+	z-index: 400;
+	float: left;
+	-webkit-overflow-scrolling: touch;
+	padding: 0 3% 0;
+	max-width: 510px;
+	width: 25.757%;
+	border-right: 1px solid #f0f0f1;
+	background: #fff;
+
+	@include transition(left 0.4s ease-out);
+
+	&.sidebar-open {
+		left: 0 !important;
+	}
+
+	.page-sidebar-sticky {
+		padding: 55px 0;
+	}
+
+	.sidebar-close {
+		position: absolute;
+		top: 25px;
+		right: 25px;
+		display: none;
+		cursor: pointer;
+	}
+
+	@media (max-width: 525px) {
+		.sidebar-close {
+			display: block;
+		}
+	}
+
+	@media (max-width: 820px) {
+		padding: 0 5%;
+	}
+}
+
+.body-wrapper, .wrapper {
+	max-width: 840px;
+	width: 90%;
+}
+
+body.layout-sidebar-right {
+	.page-sidebar {
+		float: right;
+		border-right: 0;
+		border-left: 1px solid #f0f0f1;
+	}
+
+	.page-wrapper {
+		float: left;
+	}
+}
+
+body.layout-sidebar-hidden {
+	header.header-mobile {
+		display: block;
+		max-width: 1980px;
+		width: 100%;
+
+		&.sidebar-open {
+			left: initial;
+		}
+	}
+
+	.page-sidebar {
+		position: fixed;
+		top: 0;
+		left: -510px;
+		display: block;
+		overflow-y: scroll;
+		height: 100vh;
+		border-right: 1px solid #eee;
+
+		.sidebar-close {
+			display: block;
+		}
+	}
+
+	.page-wrapper {
+		float: left;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.page-content {
+		margin-top: 82px;
+
+		&.sidebar-open {
+			left: 0;
+		}
+	}
+}
+
+body.page {
+	.post-header .post-info .post-meta li:nth-child(2):before {
+		display: none;
+	}
+
+	.page-content .author-profile {
+		display: none;
+	}
+
+	.post-header .post-info .post-meta{
+		display: none;
+	}
+
+}
+
+@media (max-width: 1300px) {
+	header.header-mobile {
+		display: block;
+		max-width: 1980px;
+		width: 100%;
+	}
+
+	.page-sidebar, body.layout-sidebar-left .page-sidebar {
+		position: fixed;
+		left: -425px;
+		overflow-y: scroll;
+		max-width: 100%;
+		width: 425px;
+		height: 100%;
+		border-right: 1px solid #eee;
+	}
+
+	.page-wrapper {
+		float: left;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.page-content {
+		margin-top: 82px;
+	}
+}

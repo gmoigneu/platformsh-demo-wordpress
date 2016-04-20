@@ -1,0 +1,145 @@
+/* PAGINATION STYLES */
+
+nav.pagination {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 65px 0;
+	max-width: 90%;
+	width: 1024px;
+	text-align: center;
+
+	.pagination-button, .pagination-next, .pagination-previous {
+		display: inline-block;
+		padding: 20px 35px;
+		border: 1px solid #dadbe3;
+		color: #111114;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-family: $font_header;
+
+		i {
+			margin-right: 15px;
+			color: #babed3;
+			vertical-align: -3px;
+			font-size: 24px;
+		}
+
+		&:hover {
+			border-color: #EDEEF3;
+			background: #EDEEF3;
+		}
+	}
+
+	.pagination-ajax{
+		&:hover {
+			border-color: #dadbe3;
+			background: #fff;
+		}
+	}
+
+	.pagination-previous {
+		float: right;
+
+		i {
+			margin-right: 0;
+			margin-left: 15px;
+			vertical-align: -1px;
+			font-size: 18px;
+		}
+	}
+
+	.pagination-next {
+		float: left;
+
+		i {
+			vertical-align: -1px;
+			font-size: 18px;
+		}
+	}
+
+	.pagination-infinite{
+		display: none;
+	}
+
+	ul.page-numbers {
+		position: absolute;
+		left: 50%;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		cursor: default;
+		transform: translateX(-50%);
+
+		li {
+			display: inline-block;
+			float: left;
+			margin: 0 2px;
+			color: #0b0b0b;
+			text-transform: uppercase;
+			font-size: 16px;
+			font-family: $font_header;
+		}
+
+		a,
+		span {
+			display: block;
+			width: 61px;
+			height: 61px;
+			border: 1px solid #dadbe3;
+			color: #373737;
+			text-align: center;
+			line-height: 61px;
+
+			@include transition(border-color 0.125s ease-out, background-color 0.125s ease-out);
+		}
+
+		.current {
+			border-color: #2a2b30;
+			background: #2a2b30;
+			color: #fff;
+		}
+
+		a {
+			cursor: pointer;
+		}
+
+		a:hover {
+			border-color: #EDEEF3;
+			background: #EDEEF3;
+		}
+
+		span {
+			background: #f9f9f9;
+		}
+
+		.dots {
+			margin: 0;
+			padding: 0;
+			width: 16px;
+			border: 0;
+			background: transparent;
+		}
+
+		@media (max-width: 580px) {
+			display: none;
+		}
+	}
+
+	@media (max-width: 980px) {
+		ul.page-numbers {
+			display: none;
+		}
+	}
+
+	@media (max-width: 580px) {
+		.pagination-previous .main, .pagination-next .main {
+			display: none;
+		}
+
+		.pagination-previous i, .pagination-next i {
+			margin: 0;
+		}
+	}
+}

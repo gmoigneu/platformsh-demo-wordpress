@@ -1,0 +1,263 @@
+/* AUTHOR PROFILE STYLES */
+
+.author-profile {
+	clear: both;
+	padding: 75px 0 65px;
+	background: #F5F8F9;
+	text-align: center;
+
+	.inner {
+		margin: 0 auto;
+		max-width: 740px;
+		width: 95%;
+	}
+
+	.info {
+		overflow: hidden;
+		text-align: center;
+	}
+
+	hr {
+		display: none;
+	}
+
+	.gravatar {
+		display: inline-block;
+		width: 68px;
+		height: 68px;
+
+		img {
+			max-width: 100%;
+			border-radius: 90px;
+		}
+	}
+
+	.author-profile-name {
+		margin: 25px 0 0;
+		text-transform: none;
+		letter-spacing: -.5px;
+		font-weight: 400;
+		font-size: 27px;
+		font-family: $font_header;
+		line-height: normal;
+
+		a {
+			color: #171819;
+		}
+	}
+
+	p {
+		margin: 25px 0 25px;
+		color: #595d62;
+		text-align: center;
+		font-size: 16px;
+		line-height: 32px;
+	}
+
+	.author-profile-social {
+		display: inline-block;
+		overflow: hidden;
+		margin: 10px 0 0;
+		padding: 0;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			float: none;
+			margin-bottom: 10px;
+			padding: 0 3px;
+
+			a {
+				display: block;
+				float: left;
+				width: 35px;
+				height: 35px;
+				border-radius: 1px;
+				background: #000;
+				color: #fff;
+				font-size: 15px;
+				line-height: 34px;
+
+				&.twitter {
+					background: $twitter_color;
+
+					&:hover {
+						background: darken($twitter_color, 15%);
+					}
+				}
+
+				&.facebook {
+					background: $facebook_color;
+
+					&:hover {
+						background: darken($facebook_color, 15%);
+					}
+				}
+
+				&.google {
+					background: $google_color;
+
+					&:hover {
+						background: darken($google_color, 15%);
+					}
+				}
+
+				&.dribbble {
+					background: $dribbble_color;
+
+					&:hover {
+						background: darken($dribbble_color, 15%);
+					}
+				}
+
+				&.instagram {
+					background: $instagram_color;
+
+					&:hover {
+						background: darken($instagram_color, 15%);
+					}
+				}
+
+				&.github {
+					background: $github_color;
+
+					&:hover {
+						background: darken($github_color, 15%);
+					}
+				}
+
+				&.rss {
+					background: $rss_color;
+
+					&:hover {
+						background: darken($rss_color, 15%);
+					}
+				}
+
+				&.youtube {
+					background: $youtube_color;
+
+					&:hover {
+						background: darken($youtube_color, 15%);
+					}
+				}
+
+				&.pinterest {
+					background: $pinterest_color;
+
+					&:hover {
+						background: darken($pinterest_color, 15%);
+					}
+				}
+
+				&.linkedin {
+					background: $linkedin_color;
+
+					&:hover {
+						background: darken($linkedin_color, 15%);
+					}
+				}
+
+				&.reddit {
+					background: $reddit_color;
+
+					&:hover {
+						background: darken($reddit_color, 15%);
+					}
+				}
+
+				&.skype {
+					background: $skype_color;
+
+					&:hover {
+						background: darken($skype_color, 15%);
+					}
+				}
+
+				&.tumblr {
+					background: $tumblr_color;
+
+					&:hover {
+						background: darken($tumblr_color, 15%);
+					}
+				}
+
+				&.vine {
+					background: $vine_color;
+
+					&:hover {
+						background: darken($vine_color, 15%);
+					}
+				}
+
+				&.vk {
+					background: $vk_color;
+
+					&:hover {
+						background: darken($vk_color, 15%);
+					}
+				}
+
+				&.flickr {
+					background: $flickr_color;
+
+					&:hover {
+						background: darken($flickr_color, 15%);
+					}
+				}
+
+				&.stackoverflow {
+					background: $stackoverflow_color;
+
+					&:hover {
+						background: darken($stackoverflow_color, 15%);
+					}
+				}
+
+				&.twitch {
+					background: $twitch_color;
+
+					&:hover {
+						background: darken($twitch_color, 15%);
+					}
+				}
+
+				&.vimeo {
+					background: $vimeo_color;
+
+					&:hover {
+						background: darken($vimeo_color, 15%);
+					}
+				}
+
+				&.weibo {
+					background: $weibo_color;
+
+					&:hover {
+						background: darken($weibo_color, 15%);
+					}
+				}
+
+				&.email {
+					background: $email_color;
+
+					&:hover {
+						background: darken($email_color, 15%);
+					}
+				}
+
+				&.soundcloud {
+					background: $soundcloud_color;
+
+					&:hover {
+						background: darken($soundcloud_color, 15%);
+					}
+				}
+			}
+
+			&:last-child {
+				border-right: 0;
+			}
+		}
+	}
+}

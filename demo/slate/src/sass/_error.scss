@@ -1,0 +1,110 @@
+/* ERROR STYLES */
+
+header.error {
+	height: 85vh;
+	background: #131417;
+	text-align: center;
+
+	@include display(flex);
+	@include align-items(center);
+	@include justify-content(center);
+
+	.inner {
+		max-width: 730px;
+	}
+
+	.error-title {
+		margin: 0;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	hr {
+		margin: 30px auto 35px;
+		width: 15%;
+		height: 2px;
+		border: 0;
+		background: #5b5c5e;
+	}
+
+	.error-description {
+		margin: 0;
+		color: #d6d9dd;
+		font-size: 19px;
+		font-family: $font_main;
+		line-height: 37px;
+
+		a {
+			border-bottom: 1px solid #d6d9dd;
+			color: #d6d9dd;
+		}
+	}
+
+	.searchform {
+		position: relative;
+		margin: 85px auto 0;
+		max-width: 550px;
+
+		input[type='text'] {
+			margin-top: 25px;
+			padding: 18px 18px 18px 30px;
+			height: 65px;
+			border: 0;
+			border-radius: 0;
+			background: #2b2e36;
+			color: #fff;
+			text-transform: uppercase;
+			letter-spacing: 0px;
+
+			&::-webkit-input-placeholder {
+				color: #fff;
+			}
+
+			&:-moz-placeholder {
+				color: #fff;
+			}
+
+			&::-moz-placeholder {
+				color: #fff;
+			}
+
+			&:-ms-input-placeholder {
+				color: #fff;
+			}
+		}
+
+		.submit {
+			position: absolute;
+			top: 37px;
+			right: 15px;
+			padding: 0;
+			width: 43px;
+			height: 43px;
+			border: 0;
+			border-radius: 0;
+			background-color: #0f0f11;
+			color: #4d5362;
+			text-transform: uppercase;
+			letter-spacing: 0px;
+			font-weight: 400;
+			font-size: 17px;
+			line-height: 41px;
+			cursor: pointer;
+
+			@include transition(background-color 0.125s ease-out, color 0.125s ease-out);
+
+			&:hover {
+				background-color: #000;
+				color: #fff;
+			}
+		}
+	}
+
+	@media (max-width: 820px) {
+		.error-description {
+			font-size: 16px;
+			line-height: 32px;
+		}
+	}
+}

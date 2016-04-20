@@ -1,0 +1,128 @@
+/* SYNTAX STYLES */
+
+/**
+ * GitHub theme
+ *
+ * @author Craig Campbell
+ * @version 1.0.4
+ */
+pre {
+	margin: 25px 0;
+	padding: 20px 25px;
+	word-wrap: initial;
+	line-height: 19px;
+}
+
+pre,
+code,
+kbd,
+tt {
+	border-radius: 2px;
+	background: #2A282D;
+	color: #DEDEE6;
+	font-family: Consolas, 'Liberation Mono', Courier, monospace;
+}
+
+code,
+kbd,
+tt {
+	margin: 0 2px;
+	padding: 4px 6px;
+	border: 1px solid #eaeaea;
+	background: transparent;
+	color: #4D4D54;
+	font-size: 16px;
+	line-height: 30px;
+
+	@media (max-width: 720px) {
+		font-size: 15px;
+	}
+
+	@media (max-width: 490px) {
+		font-size: 14px;
+	}
+}
+
+pre code {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	color: #DEDEE6;
+}
+
+pre,
+pre code {
+	font-size: 16px;
+
+	@media (max-width: 720px) {
+		font-size: 15px;
+	}
+
+	@media (max-width: 490px) {
+		font-size: 14px;
+	}
+}
+
+/**
+ * Obsidian theme
+ *
+ * Adapted from a theme based on:
+ * http://studiostyl.es/schemes/son-of-obsidian
+ *
+ * @author Dan Stewart <dan@stewshack.com>
+ * @version 1.0
+ */
+
+pre .comment {
+	color: #66747B;
+}
+
+pre .constant {
+	color: #f05d21;
+}
+
+pre .storage {
+	color: #f05d21;
+}
+
+pre .string, pre .comment.docstring {
+	color: #9AD3F7;
+}
+
+pre .string.regexp, pre .support.tag.script, pre .support.tag.style {
+	color: #fff;
+}
+
+pre .keyword, pre .selector {
+	color: #70CA1E;
+}
+
+pre .inherited-class {
+	font-style: italic;
+}
+
+pre .entity {
+	color: #93C763;
+}
+
+pre .integer {
+	color: #FFCD22;
+}
+
+pre .call {
+	color: #A8B8CA;
+}
+
+pre .support, *[data-language="csharp"] .function.call {
+	color: #FACD22;
+}
+
+pre .variable.global, pre .variable.class, pre .variable.instance {
+	color: #CCC;
+}
+
+/* C# specific rule */
+pre .preprocessor {
+	color: #66747B;
+}

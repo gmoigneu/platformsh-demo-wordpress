@@ -1,0 +1,17 @@
+/*
+Theme Name: Platform.sh test theme
+Theme URI: http://platform.sh
+Description: This is a custom child theme for demo purpose.
+Author: Guillaume Moigneu
+Author URI: http://platform.sh
+Template: slate
+Version: 1.0.0
+Text Domain: slate
+*/
+
+@import url("../slate/assets/css/theme.min.css");
+
+/* ADD CUSTOM CSS BELOW */
+* {
+  color: blue;
+}

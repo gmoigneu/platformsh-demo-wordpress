@@ -1,0 +1,16 @@
+/* SHORTCODE STYLES */
+
+.shortprogress .percentage, .alert{
+	font-family: $font_body;
+	line-height: normal;
+}
+
+
+.shorttabs .shorttabsheader, .shorttoggle .toggleheader, .shortbutton{
+	font-family: $font_header;
+	line-height: 24px;
+}
+
+.shorttabs .shorttabscontent, .shorttoggle .togglecontent{
+	line-height: 38px;
+}
